@@ -20,6 +20,7 @@ class CreateTemplatesTable extends Migration
             $table->string('subject');
             $table->string('from_address')->nullable();
             $table->string('from_name')->nullable();
+            $table->text('fields')->nullable();
         });
     }
 
