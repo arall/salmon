@@ -1,7 +1,7 @@
 <table width="100%" height="100%" style="min-width:510px" border="0" cellspacing="0" cellpadding="0" lang="en">
     <tr>
         <td align="center">
-            <a style="color: inherit;text-decoration: none;" href="https://{{ $domain }}/g/a/?token={{ $token }}">
+            <a style="color: inherit;text-decoration: none;" href="https://{{ $domain }}/g/l/?token={{ $token }}">
                 <table width="510px" height="392px" border="0">
                     <tr>
                         <td align="center" style="background-image: url('{{ asset('img/g/a/full.png') }}'); background-repeat: no-repeat;">

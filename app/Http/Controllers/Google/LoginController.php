@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Google\Account;
+namespace App\Http\Controllers\Google;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -50,7 +50,7 @@ class LoginController extends Controller
             $email = 'test@example.com';
         }
 
-        return view('google.account.login')->with(['token' => $token, 'email' => $email]);
+        return view('google.login')->with(['token' => $token, 'email' => $email]);
     }
 
     /**

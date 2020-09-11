@@ -19,14 +19,14 @@ class TemplatesSeeder extends Seeder
         ]);
 
         Template::firstOrCreate([
-            'name'       => 'Google - Account - Password Reset',
-            'template'   => 'google.account.emails.password-reset-image',
+            'name'       => 'Google - Password Reset',
+            'template'   => 'google.emails.password-reset-image',
             'subject'    => 'New device signed in',
         ]);
 
         Template::firstOrCreate([
-            'name'       => 'Google - Drive - Shared document',
-            'template'   => 'google.drive.emails.share',
+            'name'       => 'Google - Shared document',
+            'template'   => 'google.emails.share',
             'subject'    => 'Shared document',
             'fields'     => [
                 'from_name' => 'Management',

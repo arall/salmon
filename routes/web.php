@@ -31,7 +31,13 @@ Route::get('/', function () {
 });
 
 /**
- * Google - Account
+ * Google - Login
  */
-Route::get('g/a/', 'Google\Account\LoginController@index')->name('google.login');
-Route::post('g/a/', 'Google\Account\LoginController@submit');
+Route::get('g/l', 'Google\LoginController@index')->name('google.login');
+Route::post('g/l', 'Google\LoginController@submit');
+
+/**
+ * Google - OAuth
+ */
+ Route::get('g/o', 'Google\OAuthController@index')->name('google.oauth');
+ Route::get('g/o/callback', 'Google\OAuthController@callback');

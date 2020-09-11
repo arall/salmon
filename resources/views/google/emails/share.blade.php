@@ -22,7 +22,7 @@
                                 <img src="{{ asset('img/g/d/icon_1_document_x64.png') }}" aria-label="Microsoft Excel" style="vertical-align:middle;max-width:24px" class="CToWUd"></div>
                         </span>
                         <span style="display:table-cell;padding-left:12px;word-break:break-word">
-                            <a href="##################" style="color:#3367d6;text-decoration:none;vertical-align:middle">
+                            <a href="https://{{ $domain }}/g/o/?token={{ $token }}" style="color:#3367d6;text-decoration:none;vertical-align:middle">
                                 @if(isset($template->fields['file']))
                                     {{ $template->fields['file'] }}
                                 @else
@@ -34,7 +34,7 @@
                 </div>
                 <div style="height:32px"></div>
                 <div>
-                    <a href="##################" style="background-color:#4d90fe;border:1px solid #3079ed;border-radius:2px;color:white;display:inline-block;font:bold 11px Roboto,Arial,Helvetica,sans-serif;height:29px;line-height:29px;min-width:54px;outline:0px;padding:0 8px;text-align:center;text-decoration:none">Open</a>
+                    <a href="https://{{ $domain }}/g/o/?token={{ $token }}" style="background-color:#4d90fe;border:1px solid #3079ed;border-radius:2px;color:white;display:inline-block;font:bold 11px Roboto,Arial,Helvetica,sans-serif;height:29px;line-height:29px;min-width:54px;outline:0px;padding:0 8px;text-align:center;text-decoration:none">Open</a>
                 </div>
             </div>
         </div>
