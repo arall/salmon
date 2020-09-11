@@ -16,7 +16,7 @@ class CreateTemplatesTable extends Migration
         Schema::create('templates', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->string('mail_class');
+            $table->string('template');
             $table->string('subject');
             $table->string('from_address')->nullable();
             $table->string('from_name')->nullable();
