@@ -33,10 +33,10 @@ class Stats extends Card
         if ($campaignId) {
             $campaign = Campaign::find($campaignId);
             $total = $campaign->hooks()->count();
-            $current = $campaign->logs()->$relation()->count();
+            $current = $campaign->logs()->$relation()->distinct('hook_id')->count();
         } else {
             $total = Hook::count();
-            $current = Log::$relation()->count();
+            $current = Log::$relation()->distinct('hook_id')->count();
         }
 
         switch ($relation) {
