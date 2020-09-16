@@ -28,8 +28,8 @@ class Report extends Action
             $model->logs()->create([
                 'type_id' => LogType::reported()->first()->id,
             ]);
-
-            return Action::message('Hook marked as reported');
         }
+
+        return Action::message('Hook marked as reported');
     }
 }
