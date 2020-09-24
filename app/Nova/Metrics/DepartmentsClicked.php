@@ -16,7 +16,7 @@ class DepartmentsClicked extends Partition
      */
     public function calculate(NovaRequest $request)
     {
-        $logs = Log::clicked()->get();
+        $logs = Log::distinct('hook_id')->clicked()->get();
 
         $data = [];
         foreach ($logs as $log) {

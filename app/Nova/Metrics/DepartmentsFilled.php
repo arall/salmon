@@ -16,7 +16,7 @@ class DepartmentsFilled extends Partition
      */
     public function calculate(NovaRequest $request)
     {
-        $logs = Log::filled()->get();
+        $logs = Log::distinct('hook_id')->filled()->get();
 
         $data = [];
         foreach ($logs as $log) {
